@@ -5,10 +5,10 @@ import './Sidebar.css';
 export default props => {
   return (
     <Menu>
-      <h1 className="menu-item" href="/">
+      <h2 className="menu-item" href="/">
         Películas Anteriores:
 
-      </h1>
+      </h2>
       <a className="menu-item" href="/salads">
       El Callejón de la Maldad
       </a>

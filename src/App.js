@@ -46,6 +46,7 @@ const App = () => {
           onClick={() => searchMovies(searchTerm)}
         />
       </div>
+      <h2>Películas por proyectar:</h2>
 
       {movies?.length > 0 ? (
         <div className="container">
