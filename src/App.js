@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
+import Sidebar from './Sidebar';
 import "./App.css";
 
 const API_URL = 'https://www.omdbapi.com?i=tt3896198&apikey=7eb8c7ed';
@@ -32,16 +33,16 @@ const App = () => {
     return (
       <div className="app">
       <h1>CineClub</h1>
-
+      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
       <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for movies"
+          placeholder="Películas por Proyectar: "
         />
         <img
           src={SearchIcon}
-          alt="search"
+          alt="buscar"
           onClick={() => searchMovies(searchTerm)}
         />
       </div>
@@ -54,7 +55,7 @@ const App = () => {
         </div>
       ) : (
         <div className="empty">
-          <h2>No movies found</h2>
+          <h2>No se encontraron películas D:</h2>
         </div>
       )}
     </div>

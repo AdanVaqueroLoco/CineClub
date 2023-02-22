@@ -21,8 +21,8 @@ body {
   padding: 4rem;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
 }
 
@@ -45,8 +45,8 @@ h1 {
   margin: 4rem 0 2rem;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
