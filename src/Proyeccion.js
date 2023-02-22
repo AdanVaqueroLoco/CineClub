@@ -58,7 +58,6 @@ const App = () => {
           <h2>No se encontraron películas D:</h2>
         </div>
       )}
-      <h2>¿En Que sala deseas proyectar la película?</h2>
     </div>
     );
   };
